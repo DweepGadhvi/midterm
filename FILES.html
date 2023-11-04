@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Panda Facts</title>
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        /* Set a pleasant background color */
+        body {
+            background-color: #f7f7f7;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Style the header */
+        header {
+            text-align: center;
+            background-color: #ff5733;
+            padding: 20px;
+        }
+
+        header h1 {
+            color: #fff;
+            font-size: 36px;
+        }
+
+        /* Style the container */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Style the image */
+        img {
+            max-width: 100%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* Style headings and text */
+        h2 {
+            color: #ff5733;
+            font-size: 24px;
+            margin-top: 20px;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        /* Style the contact form */
+        .contact-form {
+            background-color: #f7f7f7;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        form label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .checkbox-group {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        button[type="submit"] {
+            background-color: #ff5733;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Red Panda</h1>
+    </header>
+    <div class="container">
+        <img src="https://fsmedia.imgix.net/90/1d/68/08/cb0b/4c4c/8076/dbf5fe9b2462/a-really-cute-red-panda.jpeg?rect=0,232,3937,1967&dpr=1.5&auto=format,compress&q=75" alt="Red Panda">
+        <h2>Origin of Red Panda</h2>
+        <p>The red panda is native to the eastern Himalayas and southwestern China.</p>
+        <h2>Three Facts about Red Pandas</h2>
+        <ul>
+            <li>Red pandas are also known as "fire fox" due to their reddish fur.</li>
+            <li>They primarily feed on bamboo, similar to giant pandas.</li>
+            <li>Red pandas are solitary creatures and are mainly nocturnal.</li>
+        </ul>
+        <div class="contact-form">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <p>Would you like to receive updates?</p>
+                <div class="checkbox-group">
+                    <label for="yes">Yes</label>
+                    <input type="checkbox" id="yes" name="updates" value="yes">
+                    <label for="no">No</label>
+                    <input type="checkbox" id="no" name="updates" value="no">
+                    <label for="maybe">Maybe</label>
+                    <input type="checkbox" id="maybe" name="updates" value="maybe">
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
